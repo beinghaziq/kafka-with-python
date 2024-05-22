@@ -55,23 +55,31 @@ Docker based event driven application using Kafka to send and recieve real time 
 
 1. **Clone the Repository**:
    ```bash
-   git clone [<repository-url>](https://github.com/beinghaziq/kafka-with-python.git)
+   git clone https://github.com/beinghaziq/kafka-with-python.git
    cd repo
-   create a .env file and copy content from .env.example to it
    ```
 2. **Build the Docker Images**:
+    It will install kafka and related dependencies
    ```bash
-   docker-compose build
+   docker-compose up -d
    ```
-3. **Initialize the Database**:
-   - Before starting the application for the first time, ensure that the database is set up correctly.
+
+3. **Setup VENV(optional)**:
+   - setup virtual environment
    ```bash
-   docker-compose up -d db
-   docker-compose run web rails db:create db:migrate
+    source app/venv/bin/activate
    ```
-   - Now run the application with
+
+4. **Run Application**:
+   - Run the application
    ```bash
-   docker-compose up
+    uvicorn main:app --reload 
+   ```
+
+## Miscellaneous
+ - All dependencies can be added in requirements.txt and run using:
+    ```bash
+    pip install -r requirements.txt
    ```
 
 ## API Documentation
