@@ -1,11 +1,3 @@
-source app/venv/bin/activate
-create python -m venv ./venv
-
-
-aiokafka, fastapi, uvicorn
-
- uvicorn main:app --reload 
-
 # Kafka Integration with Python
 Docker based event driven application using Kafka to send and recieve real time messages.
 
@@ -15,9 +7,9 @@ Docker based event driven application using Kafka to send and recieve real time 
 - Recieve messages using kafka
 - View messages using kafdrop
 
-`(Ideally, a demo video should be put here.)`
-
-<img width="1409" alt="Screenshot 2023-11-09 at 7 17 12 PM" src="https://github.com/beinghaziq/awesome-readme/assets/72576839/c884958c-f0dd-4ae1-bdcc-39a888cddcb8">
+<img width="997" alt="Screenshot 2024-05-21 at 5 55 39 PM" src="https://github.com/beinghaziq/kafka-with-python/assets/72576839/7f3aa139-4246-4b07-9d91-efcac9fd43fe">
+<img width="1296" alt="Screenshot 2024-05-21 at 6 00 19 PM" src="https://github.com/beinghaziq/kafka-with-python/assets/72576839/c4f61162-7626-4e93-91b8-d9d25163a7b8">
+<img width="1287" alt="Screenshot 2024-05-21 at 5 55 54 PM" src="https://github.com/beinghaziq/kafka-with-python/assets/72576839/a143e5bf-e033-44eb-8ab4-afc7a0d00beb">
 
 
 # Build With
@@ -83,3 +75,6 @@ Docker based event driven application using Kafka to send and recieve real time 
    ```
 
 ## API Documentation
+
+<img width="1219" alt="Screenshot 2024-05-21 at 6 44 12 PM" src="https://github.com/beinghaziq/kafka-with-python/assets/72576839/3364cd6d-6f73-434e-8c03-76c08771d599">
+
